@@ -22,3 +22,10 @@ test('skybox default position is set to the 3D origin', () => {
   const result = skybox({ THREE, scene, directions });
   expect(result.userData.position).toEqual([0, 0, 0]);  // toBe vs toEqual, see https://jestjs.io/docs/en/using-matchers
 });
+
+
+test('skybox nod default size', () => {
+  const size = 6000;
+  const result = skybox({ THREE, scene, directions, size});
+  expect(result.userData.maxX).toEqual(3000);  // toBe vs toEqual, see https://jestjs.io/docs/en/using-matchers
+});

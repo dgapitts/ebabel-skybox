@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.3
+- Add jsdoc details for user-data.js
+
 ## 2.1.2
 - Use mocks from ebabel-mocks instead of custom code in this module unit tests.
 

@@ -1,4 +1,12 @@
 'use strict';
+/**
+ * `userData`
+ * Construct userData object as per https://threejs.org/docs/#api/en/core/Object3D '
+An object that can be used to store custom data about the Object3D'
+ * @param {size} integer giving size of skybox e.g. 50
+ * @param {position} array holiding 3d coordinates [x,y,z] giving position of skybox e.g. [0,0,0]
+ * @returns {userData} object encapsulating size and position data
+ */
 
 // Setup skybox default userData.
 const userData = (size, position) => {
